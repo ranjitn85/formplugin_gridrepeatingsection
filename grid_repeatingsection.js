@@ -785,15 +785,15 @@ const girdJsStyles = i$3`
 `;
 const styles = [baseStyle, girdJsStyles];
 
-let NintexSamplegrid = _decorate([e$2('nintex-gridrepeatingsection')], function (_initialize, _LitElement) {
-  class NintexSamplegrid extends _LitElement {
+let NintexSamplegridRepeatingSection = _decorate([e$2('nintex-gridrepeatingsection')], function (_initialize, _LitElement) {
+  class NintexSamplegridRepeatingSection extends _LitElement {
     constructor(...args) {
       super(...args);
       _initialize(this);
     }
   }
   return {
-    F: NintexSamplegrid,
+    F: NintexSamplegridRepeatingSection,
     d: [{
       kind: "field",
       key: "grid",
@@ -932,4 +932,4 @@ let NintexSamplegrid = _decorate([e$2('nintex-gridrepeatingsection')], function 
   };
 }, s$1);
 
-export { NintexSamplegrid };
+export { NintexSamplegridRepeatingSection };
