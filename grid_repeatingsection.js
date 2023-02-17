@@ -886,6 +886,22 @@ let NintexSamplegridRepeatingSection = _decorate([e$2('nintex-gridrepeatingsecti
             Data: {
               type: 'string',
               title: 'Data to be rendered in the grid'
+            },
+            ColumnHeader1: {
+              type: 'string',
+              title: 'Header for Column1'
+            },
+            ColumnHeader2: {
+              type: 'string',
+              title: 'Header for Column2'
+            },
+            ColumnHeader3: {
+              type: 'string',
+              title: 'Header for Column3'
+            },
+            ColumnHeader4: {
+              type: 'string',
+              title: 'Header for Column4'
             }
           }
         };
