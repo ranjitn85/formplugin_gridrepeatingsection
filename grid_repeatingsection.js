@@ -885,7 +885,9 @@ let NintexSamplegridRepeatingSection = _decorate([e$2('nintex-gridrepeatingsecti
             },
             Data: {
               type: 'string',
-              title: 'Data to be rendered in the grid'
+              title: 'Data to be rendered in the grid',
+              minLength: 1,
+              maxLength: 2000
             },
             ColumnHeader1: {
               type: 'string',
@@ -935,6 +937,19 @@ let NintexSamplegridRepeatingSection = _decorate([e$2('nintex-gridrepeatingsecti
       value: function render() {
         if (this.grid) {
           this.grid.updateConfig({
+            columns: [{
+              id: 'columnheader1',
+              name: this.ColumnHeader1
+            }, {
+              id: 'columnheader2',
+              name: this.ColumnHeader2
+            }, {
+              id: 'columnheader3',
+              name: this.ColumnHeader3
+            }, {
+              id: 'columnheader4',
+              name: this.ColumnHeader4
+            }],
             sort: this.sortable,
             data: JSON.parse(this.Data)
           });
